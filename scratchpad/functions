@@ -1,0 +1,84 @@
+/*function multiples(lb,ub,num){
+  for(var i = lb; i <= ub; i++){
+    if ((i% num) == 0)
+      console.log(i);
+  }
+}
+multiples(23,444,19);
+
+function sumeven(n){
+  var sum = 0;
+  for(var i = 2;i <= n; i = i+ 2){
+    sum= sum + i;
+  }
+  console.log(sum)
+}
+ sumeven(10)
+ 
+function divBy(lb,ub,n1,n2){
+  for(var i = lb; i <= ub; i++){
+    if ((i %n1) == 0 && (i % n2) == 0){
+      console.log(i);
+    }
+  }
+}
+divBy(2,30,5,3)
+
+
+function prime(num){
+  flag = true;
+  if (num < 2)
+    flag = false;
+  for (i = 2; i <= Math.sqrt(num); i++){
+    if (num % i == 0){
+      flag = false;
+      break;
+    }}
+  return flag;
+}
+
+function printPrimes(lb, ub){
+  for(var i = lb; i <= ub; i++){
+    if(prime(i)){
+      console.log(i);
+    }
+  }  
+}
+printPrimes(4,29)
+//tables 1 to 20
+for(var i = 1; i <= 20; i++){
+  num = i;
+    for (var j = 1; j <= 10; j++){
+      console.log(num + " * " + j +" = " +(num * j) );
+  }
+  console.log("------------")
+}
+
+
+for(var i = 1; i <= 5 ; i++){
+  data = "";
+  for (var j = 1; j <=i ; j++)
+    data += j+" ";
+  console.log(data);
+}
+for(var i = 5; i >= 1 ; i--){
+  data = "";
+  for (var j = 1; j <=i ; j++)
+    data += j +" ";
+  console.log(data);
+}
+*/
+
+for(var i=0; i < 3; i++){
+  data = "";
+  for (var j = 0; j < 3; j++){
+    data += i+ "" +j+" ";
+    
+  }
+  console.log(data);
+}
+
+/*
+Exception: ReferenceError: ij is not defined
+@Scratchpad/1:75:5
+*/
