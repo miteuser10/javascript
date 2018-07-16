@@ -57,6 +57,54 @@ function fibonacci(){
     
 }
 
+function reverse(){
+    num = getUserInput();
+    var rev = 0;
+    while (num != 0){
+        rev =  (rev * 10) + (parseInt(num % 10));
+        num = parseInt(num / 10);
+    }
+    showResult("Result: "+rev);
+    
+}
+
+function palindrome(){
+    num = getUserInput();
+    temp = num;
+   var rev = 0;
+    while (num != 0){
+        rev =  (rev * 10) + (num % 10);
+        num = parseInt(num / 10);
+    }
+    if (temp == rev){
+    showResult(temp+ " is Palindrome ");
+    }
+    else{
+        showResult(temp+ " is not palindrome");
+    }
+    
+}
+
+function sumOfDig(){
+    num = getUserInput();
+    sum = 0;
+    while (num != 0){
+        sum = sum + num % 10;
+        num = parseInt(num / 10);
+    }
+    showResult(sum);
+}
+
+function sumGetsSingleDigit(){
+    num = getUserInput();
+    sum = 0;
+    while (num > 9){
+        var r = num % 10;
+        sum = r + parseInt(num/10);
+        num = sum;
+    }
+    showResult(sum);
+}
 function getUserInput() {
     num = document.getElementById("num").value;
     return num;
